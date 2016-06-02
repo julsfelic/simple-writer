@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Header from './Header';
+
 class App extends React.Component {
 
   render() {
-    return <h1>{this.props.params.userId}</h1>
+    return (
+      <Header userId={this.props.params.userId}/>
+    );
   }
 }
 
